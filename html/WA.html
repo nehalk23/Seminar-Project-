@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Write Article</title>
+    <link rel="stylesheet" href="WA.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+      <form action="database2.php" method="post">
+        <a>
+          <div id="google_translate_element"></div>
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </a>
+    </div>
+    </script>
+    <div class="wrapper">
+      <h2>Write Article</h2>
+      Enter Name:<br>
+      <input type="text" name="name" required><br>
+      Enter Email:<br>
+      <input type="text" name="email" required><br>
+      Title:<br>
+      <input type="text" name="title" required><br>
+      Review:<br>
+      <textarea spellcheck="false" placeholder="Type something here..." name="review" required></textarea>
+      <input type="submit" value="Submit" name="save">
+    </div>
+    
+    <script>
+      const textarea = document.querySelector("textarea");
+      textarea.addEventListener("keyup", e =>{
+        textarea.style.height = "63px";
+        let scHeight = e.target.scrollHeight;
+        textarea.style.height = `${scHeight}px`;
+      });
+    </script>
+      </form>
+  </body>
+</html>
